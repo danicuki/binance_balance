@@ -7,8 +7,6 @@ const binance = new Binance().options({
 })
 
 export default async function handler(req, res) {
-  console.log(req.query.key)
-  console.log(API_KEY)
   if (req.query.key !== API_KEY) {
     res.send("[]")
     return
