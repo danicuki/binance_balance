@@ -4,7 +4,6 @@ const API_KEY = process.env.API_KEY
 const binance = new Binance().options({
   APIKEY: API_KEY,
   APISECRET: process.env.API_SECRET,
-  family: 4,
 })
 
 export default async function handler(req, res) {
